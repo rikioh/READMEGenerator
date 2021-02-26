@@ -1,7 +1,8 @@
-# Owa Owa
+# Owa Owa     
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
-    Yes
+    Owa OWA
 
 ## Table of Contents
 [Description](#Description)<br>
@@ -13,19 +14,19 @@
 [Questions](#Questions)
 
 ## Installation 
-    Sure
+    inquirer
 
 ## Usage 
-    why not
+    makes a readme
 
 ## License 
-    [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+    This application is covered under the MIT License
 
 ## Contributing 
     Me
 
 ## Tests 
-    Me
+    Test all cases
 
 ## Questions 
-    You can reach me via https://github.com/Me or at Me if you have additional questions.
+    You can reach me via https://github.com/rikioh or at rikio@gmail.com if you have additional questions.

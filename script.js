@@ -54,21 +54,31 @@ const promptUser = () =>
 const licenseChoice = (answers) =>
 {
     if(answers.license=="Mozilla Public"){
-        license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-        return license
+        license = {
+            badge:"[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
+            sentence:"This application is covered under the Mozilla Public License"
+        }
+            return license
     }
     else if(answers.license=="ISC"){
-        license =  "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+        license = {
+            badge:"[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
+            sentence:"This application is covered under the ISC License"
+        }
         return license
     }
     else if(answers.license=="MIT"){
-        license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        license = {
+            badge:"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+            sentence:"This application is covered under the MIT License"
+        }
         return license
     }
 }
 
 const generateReadme = (answers) =>
-`# ${answers.title}
+`# ${answers.title}     
+${license.badge}
 
 ## Description 
     ${answers.description}
@@ -89,7 +99,7 @@ const generateReadme = (answers) =>
     ${answers.usage}
 
 ## License 
-    ${license}
+    ${license.sentence}
 
 ## Contributing 
     ${answers.contributing}
