@@ -53,21 +53,35 @@ const promptUser = () =>
 const generateReadme = (answers) =>
 `# ${answers.title}
 
-**Description**: ${answers.description}
+## Description 
+    ${answers.description}
 
-**Table of Contents**: ???
+## Table of Contents
+    [Description](#Description)
+    [Installation](#Installation)
+    [Usage](#Usage)
+    [License](#License)
+    [Contributing](#Contributing)
+    [Tests](#Tests)
+    [Questions](#Questions)
 
-**Installation**: ${answers.install}
+## Installation 
+    ${answers.install}
 
-**Usage**: ${answers.usage}
+## Usage 
+    ${answers.usage}
 
-**License**: ${answers.license}
+## License 
+    ${answers.license}
 
-**Contributing**: ${answers.contributing}
+## Contributing 
+    ${answers.contributing}
 
-**Tests**: ${answers.tests}
+## Tests 
+    ${answers.tests}
 
-**Questions**: You can reach me via https://github.com/${answers.github} or at ${answers.email} if you have additional questions.`
+## Questions 
+    You can reach me via https://github.com/${answers.github} or at ${answers.email} if you have additional questions.`
 
 const init = () => {
   promptUser().then((answers) => {
