@@ -40,15 +40,18 @@ const promptUser = () =>
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Enter any questions you have for users.',
+        name: 'github',
+        message: 'What is your github username?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?',
     },
   ]);
 
 const generateReadme = (answers) =>
 `# ${answers.title}
-
-**Name**: 
 
 **Description**: ${answers.description}
 
@@ -64,7 +67,7 @@ const generateReadme = (answers) =>
 
 **Tests**: ${answers.tests}
 
-**Questions**: ${answers.questions} `
+**Questions**: You can reach me via https://github.com/${answers.github} or at ${answers.email} if you have additional questions.`
 
 const init = () => {
   promptUser().then((answers) => {

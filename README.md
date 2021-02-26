@@ -1,19 +1,19 @@
-# readmegenerator
+# readme generator
 
 **Name**: 
 
-**Description**: its pretty cool
+**Description**: it generates a readme duh
 
 **Table of Contents**: ???
 
-**Installation**: install it good boi
+**Installation**: install it with inquirer
 
-**Usage**: use it well but not smartly
+**Usage**: use it to make a sick readme
 
-**License**: license deez
+**License**: na
 
 **Contributing**: me
 
-**Tests**: well i hope
+**Tests**: thoroughly
 
-**Questions**: is it nice 
+**Questions**: You can reach me via https://github.com/rikioh or at rikiocamp@gmail.com if you have additional questions.
