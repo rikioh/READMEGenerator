@@ -57,12 +57,12 @@ const generateReadme = (answers) =>
     ${answers.description}
 
 ## Table of Contents
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#License)
-[Contributing](#Contributing)
-[Tests](#Tests)
+[Description](#Description)<br>
+[Installation](#Installation)<br>
+[Usage](#Usage)<br>
+[License](#License)<br>
+[Contributing](#Contributing)<br>
+[Tests](#Tests)<br>
 [Questions](#Questions)
 
 ## Installation 
