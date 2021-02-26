@@ -11,7 +11,7 @@
 
 ## Description 
     This application will generate a professional README for your project off of a template. This is useful if you want to have a quick and standard readme format across your applications or just want to save a bit of time on the administrative part of your projects.
-![Video Walkthroguh](./walkthrough.mkv "Video Walkthrough for application program")
+![Video Walkthrough](./walkthrough.mkv "Video Walkthrough for application program")
 
 ## Installation 
 You must download node.JS as a prerequisite. 
