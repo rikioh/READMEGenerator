@@ -46,26 +46,25 @@ const promptUser = () =>
   ]);
 
 const generateReadme = (answers) =>
-    `
-    # ${answers.title}
+`# ${answers.title}
 
-    **Name**: 
+**Name**: 
 
-    **Description**: ${answers.description}
+**Description**: ${answers.description}
 
-    **Table of Contents**: ???
+**Table of Contents**: ???
 
-    **Installation**: ${answers.install}
-    
-    **Usage**: ${answers.usage}
-    
-    **License**: ${answers.license}
+**Installation**: ${answers.install}
 
-    **Contributing**: ${answers.contributing}
+**Usage**: ${answers.usage}
 
-    **Tests**: ${answers.tests}
+**License**: ${answers.license}
 
-    **Questions**: ${answers.questions} `
+**Contributing**: ${answers.contributing}
+
+**Tests**: ${answers.tests}
+
+**Questions**: ${answers.questions} `
 
 const init = () => {
   promptUser().then((answers) => {

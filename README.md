@@ -1,20 +1,19 @@
+# readmegenerator
 
-    # READMEGEN
+**Name**: 
 
-    **Name**: 
+**Description**: its pretty cool
 
-    **Description**: description goes here
+**Table of Contents**: ???
 
-    **Table of Contents**: ???
+**Installation**: install it good boi
 
-    **Installation**: install npm inquirer
-    
-    **Usage**: use it well
-    
-    **License**: nah
+**Usage**: use it well but not smartly
 
-    **Contributing**: Me homie
+**License**: license deez
 
-    **Tests**: test it well
+**Contributing**: me
 
-    **Questions**: is it good? 
+**Tests**: well i hope
+
+**Questions**: is it nice 
