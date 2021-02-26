@@ -24,9 +24,10 @@ const promptUser = () =>
         message: 'Please describe the usage of the application',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Please enter any necessary licenses',
+        choices:["Mozilla Public","ISC", "MIT"],
     },
     {
         type: 'input',
@@ -50,6 +51,22 @@ const promptUser = () =>
     },
   ]);
 
+const licenseChoice = (answers) =>
+{
+    if(answers.license=="Mozilla Public"){
+        license = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+        return license
+    }
+    else if(answers.license=="ISC"){
+        license =  "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
+        return license
+    }
+    else if(answers.license=="MIT"){
+        license = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        return license
+    }
+}
+
 const generateReadme = (answers) =>
 `# ${answers.title}
 
@@ -72,7 +89,7 @@ const generateReadme = (answers) =>
     ${answers.usage}
 
 ## License 
-    ${answers.license}
+    ${license}
 
 ## Contributing 
     ${answers.contributing}
@@ -86,6 +103,7 @@ const generateReadme = (answers) =>
 const init = () => {
   promptUser().then((answers) => {
     try {
+      const license = licenseChoice(answers)
       const md = generateReadme(answers);
       fs.writeFileSync('README.md', md);
       console.log('Successfully wrote to readme.md');
