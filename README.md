@@ -1,12 +1,20 @@
-# READMEGenerator
 
-**Name**: 
+    # READMEGEN
 
-**Technologies used**: HTML, Javascript, CSS, JQuery, Node
+    **Name**: 
 
-**Link to deployed application**: https://rikioh.github.io/weatherapp/
+    **Description**: description goes here
 
-**Expected behavior/acceptance criteria of javascript code**:
+    **Table of Contents**: ???
 
+    **Installation**: install npm inquirer
+    
+    **Usage**: use it well
+    
+    **License**: nah
 
+    **Contributing**: Me homie
 
+    **Tests**: test it well
+
+    **Questions**: is it good? 

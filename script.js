@@ -4,42 +4,68 @@ const fs = require('fs');
 const promptUser = () =>
   inquirer.prompt([
     {
-      type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+        type: 'input',
+        name: 'title',
+        message: 'What is your project title?',
     },
     {
-      type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+        type: 'input',
+        name: 'description',
+        message: 'Please write a description of the project application',
     },
     {
-      type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+        type: 'input',
+        name: 'install',
+        message: 'What are any installation specifications?',
     },
     {
-      type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+        type: 'input',
+        name: 'usage',
+        message: 'Please describe the usage of the application',
     },
     {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+        type: 'input',
+        name: 'license',
+        message: 'Please enter any necessary licenses',
     },
     {
-      type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+        type: 'input',
+        name: 'contributing',
+        message: 'Please list all who contributed to this project.',
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Please describe how to test the application.',
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Enter any questions you have for users.',
     },
   ]);
 
 const generateReadme = (answers) =>
-    `${answers.name}
-    ${answers.location}
-    ${answers.github}
-    ${answers.linkedin}`
+    `
+    # ${answers.title}
+
+    **Name**: 
+
+    **Description**: ${answers.description}
+
+    **Table of Contents**: ???
+
+    **Installation**: ${answers.install}
+    
+    **Usage**: ${answers.usage}
+    
+    **License**: ${answers.license}
+
+    **Contributing**: ${answers.contributing}
+
+    **Tests**: ${answers.tests}
+
+    **Questions**: ${answers.questions} `
 
 const init = () => {
   promptUser().then((answers) => {
